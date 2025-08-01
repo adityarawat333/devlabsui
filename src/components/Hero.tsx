@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
-import { ArrowRight, Play, TrendingUp, Users, Award } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const floatingElementsRef = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
-    // GSAP floating animation for background elements
     floatingElementsRef.current.forEach((el, index) => {
       if (el) {
         gsap.to(el, {
@@ -30,15 +29,19 @@ const Hero = () => {
   };
 
   return (
-    <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden bg-cover bg-center" style={{backgroundImage: 'url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920)'}}>
+    <section
+      ref={heroRef}
+      className="relative min-h-screen flex items-center overflow-hidden bg-cover bg-center"
+      style={{
+        backgroundImage:
+          'url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+      }}
+    >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
-      
-      {/* Abstract Background Elements */}
 
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Left Content */}
           <div className="space-y-8 text-white">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -55,11 +58,31 @@ const Hero = () => {
               </h1>
 
               <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-                At Devlabs, we specialize in delivering comprehensive IT training solutions that transform teams, 
+                At Devlabs, we specialize in delivering comprehensive IT training solutions that transform teams,
                 boost your team's potential and drive business with our expert-led courses.
               </p>
             </motion.div>
 
+            {/* Search Bar */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="max-w-2xl mx-auto"
+            >
+              <div className="flex items-center bg-white/90 rounded-full overflow-hidden shadow-md">
+                <input
+                  type="text"
+                  placeholder="Search from 3000+ courses"
+                  className="flex-grow px-6 py-4 text-gray-800 text-lg placeholder-gray-500 focus:outline-none bg-transparent"
+                />
+                <button className="bg-blue-600 p-4 rounded-full hover:bg-blue-700 transition">
+                  <Search className="text-white w-6 h-6" />
+                </button>
+              </div>
+            </motion.div>
+
+            {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}

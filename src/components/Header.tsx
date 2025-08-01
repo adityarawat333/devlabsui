@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,14 +35,19 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo + Brand */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <span className="text-2xl font-bold text-gray-800">
+            <img 
+              src="/src/components/DLA_Black 1 1.png"  // <-- put your logo in /public/logo.png
+              alt="Devlabs Logo"
+              className="h-14 w-90"
+            />
+            {/* <span className="text-4xl font-bold text-[#007fff]">
               Devlabs
-            </span>
+            </span> */}
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -51,7 +56,7 @@ const Header = () => {
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '-')}`}
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
+                className="text-gray-800 hover:text-[#007fff] transition-colors duration-200 font-medium"
                 whileHover={{ y: -2 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -63,7 +68,7 @@ const Header = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium shadow-lg hover:shadow-xl transition-shadow duration-200"
+              className="bg-[#007fff] text-white px-6 py-2 rounded-full font-medium shadow-lg hover:shadow-xl transition-shadow duration-200"
             >
               Get Quote
             </motion.button>
@@ -90,14 +95,14 @@ const Header = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '-')}`}
-                className="block px-4 py-2 text-gray-700 hover:text-[#0f52ba] hover:bg-gray-50 rounded transition-colors"
+                className="block px-4 py-2 text-gray-800 hover:text-[#007fff] hover:bg-gray-50 rounded transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item}
               </a>
             ))}
             <div className="px-4 pt-2">
-              <button className="w-full bg-gradient-to-r from-[#73c2fb] to-[#0f52ba] text-white py-2 rounded-full font-medium">
+              <button className="w-full bg-[#007fff] text-white py-2 rounded-full font-medium">
                 Get Quote
               </button>
             </div>
