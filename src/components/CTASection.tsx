@@ -159,7 +159,7 @@ const CTASection = () => {
               <div className="bg-gradient-to-br from-white/40 via-slate-100/20 to-slate-200/40 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-2xl">
                 <h4 className="font-bold text-yellow-300 mb-2">Our Guarantee</h4>
                 <p className="text-l text-black/60 font-bold leading-relaxed font-bevietnam">
-                  100% satisfaction guaranteed or your money back. We're so confident 
+                  100 satisfaction guaranteed or your money back. We're so confident 
                   in our training quality that we offer a full refund if you're not 
                   completely satisfied within the first week.
                 </p>
