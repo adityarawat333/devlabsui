@@ -35,7 +35,7 @@ const CTASection = () => {
               Ready to Transform
               <span className="block text-yellow-300">Your Team?</span>
             </h2>
-            <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl text-white/90 font-bold leading-relaxed font-bevietnam">
               Join 500+ leading companies that have accelerated their digital transformation 
               with our expert-led training programs.
             </p>
@@ -57,9 +57,9 @@ const CTASection = () => {
                 >
                   <div className="flex items-center space-x-4">
                     <Calendar className="w-8 h-8" />
-                    <div className="text-left">
+                    <div className="text-left text-lg font-bold leading-relaxed font-bevietnam">
                       <div>Schedule Free Consultation</div>
-                      <div className="text-sm font-medium text-gray-600">
+                      <div className="text-sm font-bold text-gray-600">
                         30-minute strategy session
                       </div>
                     </div>
@@ -74,7 +74,7 @@ const CTASection = () => {
                 >
                   <div className="flex items-center space-x-4">
                     <Mail className="w-8 h-8" />
-                    <div className="text-left">
+                    <div className="text-left text-lg text-white font-bold leading-relaxed font-bevietnam">
                       <div>Get Custom Training Quote</div>
                       <div className="text-sm font-medium text-white/80">
                         Tailored to your needs
@@ -91,7 +91,7 @@ const CTASection = () => {
                 >
                   <div className="flex items-center space-x-4">
                     <Phone className="w-8 h-8" />
-                    <div className="text-left">
+                    <div className="text-left text-lg font-bold leading-relaxed font-bevietnam">
                       <div>Call Our Experts Now</div>
                       <div className="text-sm font-medium text-gray-700">
                         1-800-TECHFORWARD
@@ -103,9 +103,9 @@ const CTASection = () => {
               </div>
 
               {/* Contact Info */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                <h3 className="font-bold text-lg mb-4">Quick Connect</h3>
-                <div className="space-y-3 text-sm">
+              <div className="bg-[#0653C1] text-[#0f52ba] p-6 rounded-2xl shadow-2xl ">
+                <h3 className="font-bold text-lg mb-4 text-lg text-yellow-300 font-bold leading-relaxed font-bevietnam">Quick Connect</h3>
+                <div className="space-y-1 text-md text-white/90 font-bold leading-relaxed font-bevietnam">
                   <div className="flex items-center space-x-3">
                     <Phone className="w-4 h-4" />
                     <span>1-800-TECHFORWARD (832-4367)</span>
@@ -129,10 +129,10 @@ const CTASection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="space-y-8"
             >
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <h3 className="text-2xl font-bold mb-6">What You Get</h3>
+              <div className="bg-[#0653C1] text-[#0f52ba] p-6 rounded-2xl font-bold text-xl shadow-2xl ">
+                <h3 className="text-2xl font-bold text-yellow-300 mb-6">What You Get</h3>
                 
-                <div className="space-y-4">
+                <div className="space-y-1 text-md text-white/90 leading-relaxed font-bevietnam">
                   {[
                     'Comprehensive skills assessment and gap analysis',
                     'Custom curriculum designed for your technology stack',
@@ -156,9 +156,9 @@ const CTASection = () => {
               </div>
 
               {/* Guarantee */}
-              <div className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 backdrop-blur-sm rounded-xl p-6 border border-yellow-400/30">
+              <div className="bg-gradient-to-br from-white/40 via-slate-100/20 to-slate-200/40 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-2xl">
                 <h4 className="font-bold text-yellow-300 mb-2">Our Guarantee</h4>
-                <p className="text-white/90 text-sm">
+                <p className="text-l text-black/60 font-bold leading-relaxed font-bevietnam">
                   100% satisfaction guaranteed or your money back. We're so confident 
                   in our training quality that we offer a full refund if you're not 
                   completely satisfied within the first week.

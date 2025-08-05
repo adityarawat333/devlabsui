@@ -49,7 +49,7 @@ const Hero = () => {
               transition={{ duration: 0.8 }}
               className="space-y-6"
             >
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight font-roboto">
                 Empower Your Team
                 <br />
                 with Expert IT
@@ -57,7 +57,7 @@ const Hero = () => {
                 Training
               </h1>
 
-              <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto font-sensation">
                 At Devlabs, we specialize in delivering comprehensive IT training solutions that transform teams,
                 boost your team's potential and drive business with our expert-led courses.
               </p>
